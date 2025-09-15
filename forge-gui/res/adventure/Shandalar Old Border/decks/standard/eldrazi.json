@@ -1,10 +1,37 @@
-{                                    
-"name":"Eldrazi",
-  "template":
-  {
-   "count":60,
-   "colors":["Blue","Black","Green"],
-   "tribe":"Phyrexian",
-   "rares":0.6
-  }
+{
+  "name": "Eldrazi",
+  "mainDeck": [
+    {
+      "count": 8,
+      "cardName": "Island|MIR"
+    },
+    {
+      "count": 8,
+      "cardName": "Swamp|MIR"
+    },
+    {
+      "count": 6,
+      "cardName": "Forest|MIR"
+    },
+    {
+      "count": 2,
+      "cardName": "Underground River|5ED"
+    },
+    {
+      "count": 16,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 8,
+      "colors": ["Blue", "Black", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,10 +1,25 @@
-{                                    
-"name":"Bird_Blue",
-  "template":
-  {
-   "count":60,
-   "colors":["Blue"],
-   "tribe":"Bird",
-   "rares":0.4
-  }
+{
+  "name": "Bird_Blue",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Island|4ED"
+    },
+    {
+      "count": 22,
+      "subTypes": ["Bird"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Bird"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 6,
+      "colors": ["Blue"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

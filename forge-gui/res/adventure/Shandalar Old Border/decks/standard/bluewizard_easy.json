@@ -1,9 +1,19 @@
-{                                    
-"name":"Blue bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Blue"], 
-   "rares":0.1
-  }
+{
+  "name": "Blue bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Island|ODY"
+    },
+    {
+      "count": 40,
+      "colors": ["Blue"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "colors": ["Blue"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

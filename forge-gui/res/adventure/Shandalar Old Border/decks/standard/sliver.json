@@ -1,12 +1,41 @@
-{                                    
-"name":"Sliver",
-  "template":
-  {
-   "count":60,
-   "colors":["White","Red","Green","Blue","Black"],
-   "tribe":"Sliver",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Sliver",
+  "mainDeck": [
+    {
+      "count": 5,
+      "cardName": "Plains|TMP"
+    },
+    {
+      "count": 5,
+      "cardName": "Island|TMP"
+    },
+    {
+      "count": 5,
+      "cardName": "Swamp|TMP"
+    },
+    {
+      "count": 5,
+      "cardName": "Mountain|TMP"
+    },
+    {
+      "count": 4,
+      "cardName": "Forest|TMP"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Sliver"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Sliver"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 4,
+      "colors": ["White", "Red", "Green", "Blue", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2]
+    }
+  ]
 }

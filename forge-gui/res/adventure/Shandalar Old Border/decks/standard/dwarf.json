@@ -1,12 +1,33 @@
-{                                    
-"name":"Dwarf",
-  "template":
-  {
-   "count":60,
-   "colors":["Red","White"],
-   "tribe":"Dwarf",         
-   "tribeCards":0.7,     
-   "tribeSynergyCards":0.0,
-   "rares":0.5
-  }
+{
+  "name": "Dwarf",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Mountain|2ED"
+    },
+    {
+      "count": 10,
+      "cardName": "Plains|2ED"
+    },
+    {
+      "count": 4,
+      "cardName": "Battlefield Forge|APO"
+    },
+    {
+      "count": 17,
+      "subTypes": ["Dwarf"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Dwarf"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 7,
+      "colors": ["Red", "White"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,9 +1,19 @@
-{                                    
-"name":"Green bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Green"], 
-   "rares":0.1
-  }
+{
+  "name": "Green bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Forest|4ED"
+    },
+    {
+      "count": 40,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "colors": ["Green"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

@@ -1,12 +1,25 @@
-{                                    
-"name":"Fox",
-  "template":
-  {
-   "count":60,
-   "colors":["White"],
-   "tribe":"Fox",        
-   "tribeCards":0.5,
-   "tribeSynergyCards":0.2,
-   "rares":0.2
-  }
+{
+  "name": "Fox",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Plains|6ED"
+    },
+    {
+      "count": 15,
+      "subTypes": ["Fox"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 3,
+      "subTypes": ["Fox"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 18,
+      "colors": ["White"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

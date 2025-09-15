@@ -1,10 +1,19 @@
-{                                    
-"name":"Elf bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Green"],
-   "tribe":"Elf",
-   "rares":0.1
-  }
+{
+  "name": "Elf bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Forest|LEA"
+    },
+    {
+      "count": 40,
+      "subTypes": ["Elf"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Elf"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

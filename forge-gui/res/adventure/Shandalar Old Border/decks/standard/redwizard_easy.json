@@ -1,9 +1,19 @@
-{                                    
-"name":"Red bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Red"], 
-   "rares":0.1
-  }
+{
+  "name": "Red bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Mountain|ONS"
+    },
+    {
+      "count": 40,
+      "colors": ["Red"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "colors": ["Red"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

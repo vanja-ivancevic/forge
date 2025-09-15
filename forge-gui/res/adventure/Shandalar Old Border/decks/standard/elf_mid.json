@@ -1,10 +1,25 @@
-{                                    
-"name":"Elf mid",
-  "template":
-  {
-   "count":60,
-   "colors":["Green"],
-   "tribe":"Elf",
-   "rares":0.5
-  }
+{
+  "name": "Elf mid",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Forest|3ED"
+    },
+    {
+      "count": 18,
+      "subTypes": ["Elf"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 9,
+      "subTypes": ["Elf"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

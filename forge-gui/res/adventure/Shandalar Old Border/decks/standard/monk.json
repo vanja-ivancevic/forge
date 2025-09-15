@@ -1,12 +1,30 @@
-{                                    
-"name":"Monk",
-  "template":
-  {
-   "count":60,
-   "colors":["White","Red"],
-   "tribe":"Monk",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Monk",
+  "mainDeck": [
+    {
+      "count": 12,
+      "cardName": "Plains|3ED"
+    },
+    {
+      "count": 12,
+      "cardName": "Mountain|3ED"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Monk"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 6,
+      "colors": ["White", "Red"],
+      "subTypes": ["Monk"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 6,
+      "colors": ["White", "Red"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,11 +1,29 @@
-{                                    
-"name":"Construct",
-  "template":
-  {
-   "count":80,
-   "colors":["Black","Green"],
-   "tribe":"Construct",    
-   "tribeCards":0.8,
-   "rares":0.1
-  }
+{
+  "name": "Construct",
+  "mainDeck": [
+    {
+      "count": 16,
+      "cardName": "Swamp|6ED"
+    },
+    {
+      "count": 16,
+      "cardName": "Forest|6ED"
+    },
+    {
+      "count": 32,
+      "subTypes": ["Construct"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Construct"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 8,
+      "colors": ["Black", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

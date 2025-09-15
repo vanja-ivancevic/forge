@@ -1,12 +1,33 @@
-{                                    
-"name":"Djinn",
-  "template":
-  {
-   "count":60,
-   "colors":["Blue","Red"],
-   "tribe":"Djinn",         
-   "tribeCards":0.7,     
-   "tribeSynergyCards":0.0,
-   "rares":0.5
-  }
+{
+  "name": "Djinn",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Island|TMP"
+    },
+    {
+      "count": 10,
+      "cardName": "Mountain|TMP"
+    },
+    {
+      "count": 4,
+      "cardName": "Shivan Reef|APO"
+    },
+    {
+      "count": 17,
+      "subTypes": ["Djinn"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Djinn"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 7,
+      "colors": ["Blue", "Red"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

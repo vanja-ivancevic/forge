@@ -1,11 +1,33 @@
-{                                    
-"name":"Faerie",
-  "template":
-  {
-   "count":60,
-   "colors":["Blue","Green"],
-   "tribe":"Faerie",         
-   "tribeCards":0.5,     
-   "rares":0.5
-  }
+{
+  "name": "Faerie",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Island|5ED"
+    },
+    {
+      "count": 10,
+      "cardName": "Forest|5ED"
+    },
+    {
+      "count": 4,
+      "cardName": "Yavimaya Coast|APO"
+    },
+    {
+      "count": 15,
+      "subTypes": ["Faerie"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Faerie"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["Blue", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

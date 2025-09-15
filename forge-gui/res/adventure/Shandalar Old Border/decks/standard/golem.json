@@ -1,11 +1,25 @@
-{                                    
-"name":"Golem bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Black","Green","White","Blue","Red"],
-   "tribe":"Golem",    
-   "tribeCards":0.8,
-   "rares":0.1
-  }
+{
+  "name": "Golem bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Swamp|MIR"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Golem"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Golem"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 16,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

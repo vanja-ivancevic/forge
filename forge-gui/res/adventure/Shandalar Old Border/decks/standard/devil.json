@@ -1,11 +1,23 @@
-{                                    
-"name":"Devil",
-  "template":
-  {
-   "count":80,
-   "colors":["Red","Black"],
-   "tribe":"Devil",    
-   "tribeCards":1.0,
-   "rares":0.1
-  }
+{
+  "name": "Devil",
+  "mainDeck": [
+    {
+      "count": 16,
+      "cardName": "Mountain|MMQ"
+    },
+    {
+      "count": 16,
+      "cardName": "Swamp|MMQ"
+    },
+    {
+      "count": 40,
+      "subTypes": ["Devil"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Devil"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

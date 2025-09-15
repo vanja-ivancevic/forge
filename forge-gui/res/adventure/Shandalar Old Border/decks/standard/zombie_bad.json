@@ -1,11 +1,19 @@
-{                                    
-"name":"Zombie bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Black"],
-   "tribe":"Zombie",    
-   "tribeCards":1.0,
-   "rares":0.1
-  }
+{
+  "name": "Zombie bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Swamp|6ED"
+    },
+    {
+      "count": 40,
+      "subTypes": ["Zombie"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Zombie"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

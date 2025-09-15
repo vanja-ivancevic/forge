@@ -1,10 +1,25 @@
-{                                    
-"name":"Elf good",
-  "template":
-  {
-   "count":60,
-   "colors":["Green"],
-   "tribe":"Elf",
-   "rares":0.8
-  }
+{
+  "name": "Elf good",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Forest|LEB"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Elf"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Elf"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,12 +1,25 @@
-{                                    
-"name":"Copper Host Infector",
-  "template":
-  {
-   "count":60,
-   "colors":["Black"],
-   "tribe":"Phyrexian",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.45,
-   "rares":0.25
-  }
+{
+  "name": "Copper Host Infector",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Swamp|7ED"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 6,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 6,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

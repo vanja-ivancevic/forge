@@ -1,12 +1,33 @@
-{                                    
-"name":"Spider",
-  "template":
-  {
-   "count":60,
-   "colors":["Green","Black"],
-   "tribe":"Spider",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.3,
-   "rares":0.8
-  }
+{
+  "name": "Spider",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Forest|INV"
+    },
+    {
+      "count": 10,
+      "cardName": "Swamp|INV"
+    },
+    {
+      "count": 4,
+      "cardName": "Llanowar Wastes|APO"
+    },
+    {
+      "count": 17,
+      "subTypes": ["Spider"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 14,
+      "subTypes": ["Spider"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Green", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

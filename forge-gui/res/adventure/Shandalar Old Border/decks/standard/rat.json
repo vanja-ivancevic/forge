@@ -1,10 +1,25 @@
-{                                    
-"name":"Rat",
-  "template":
-  {
-   "count":60,
-   "colors":["Black"],
-   "tribe":"Rat",        
-   "rares":0.5
-  }
+{
+  "name": "Rat",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Swamp|5ED"
+    },
+    {
+      "count": 18,
+      "subTypes": ["Rat"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 9,
+      "subTypes": ["Rat"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

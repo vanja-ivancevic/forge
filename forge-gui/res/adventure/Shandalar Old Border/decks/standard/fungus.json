@@ -1,12 +1,33 @@
-{                                    
-"name":"Fungus",
-  "template":
-  {
-   "count":60,
-   "colors":["Green","Black"],
-   "tribe":"Fungus",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.2
-  }
+{
+  "name": "Fungus",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Forest|TMP"
+    },
+    {
+      "count": 10,
+      "cardName": "Swamp|TMP"
+    },
+    {
+      "count": 4,
+      "cardName": "Llanowar Wastes|APO"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Fungus"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 3,
+      "subTypes": ["Fungus"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["Green", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

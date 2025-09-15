@@ -1,9 +1,25 @@
-{                                    
-"name":"Gargoyle",
-  "template":
-  {
-   "count":60,
-   "tribe":"Gargoyle",    
-   "rares":0.8
-  }
+{
+  "name": "Gargoyle",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Swamp|ODY"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Gargoyle"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Gargoyle"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 16,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

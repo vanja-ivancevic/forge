@@ -1,12 +1,33 @@
-{                                    
-"name":"Shaman",
-  "template":
-  {
-   "count":60,
-   "colors":["Red","Green"],
-   "tribe":"Shaman",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Shaman",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Mountain|7ED"
+    },
+    {
+      "count": 10,
+      "cardName": "Forest|7ED"
+    },
+    {
+      "count": 4,
+      "cardName": "Karplusan Forest|ICE"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Shaman"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Shaman"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 4,
+      "colors": ["Red", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2]
+    }
+  ]
 }

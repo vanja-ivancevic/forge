@@ -1,12 +1,32 @@
-{                                    
-"name":"Berserker",
-  "template":
-  {
-   "count":60,
-   "colors":["Red","Black","Green"],
-   "tribe":"Berserker",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Berserker",
+  "mainDeck": [
+    {
+      "count": 7,
+      "cardName": "Mountain|USG"
+    },
+    {
+      "count": 7,
+      "cardName": "Swamp|USG"
+    },
+    {
+      "count": 6,
+      "cardName": "Forest|USG"
+    },
+    {
+      "count": 4,
+      "cardName": "Llanowar Wastes|ICE"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Berserker"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "colors": ["Red", "Black", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2]
+    }
+  ]
 }

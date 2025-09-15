@@ -1,10 +1,37 @@
-{                                    
-"name":"Human mid",
-  "template":
-  {
-   "count":60,
-   "colors":["White","Blue","Green"],
-   "tribe":"Human",
-   "rares":0.5
-  }
+{
+  "name": "Human mid",
+  "mainDeck": [
+    {
+      "count": 8,
+      "cardName": "Plains|5ED"
+    },
+    {
+      "count": 8,
+      "cardName": "Island|5ED"
+    },
+    {
+      "count": 6,
+      "cardName": "Forest|5ED"
+    },
+    {
+      "count": 2,
+      "cardName": "Yavimaya Coast|APO"
+    },
+    {
+      "count": 18,
+      "subTypes": ["Human"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 9,
+      "subTypes": ["Human"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["White", "Blue", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    }
+  ]
 }

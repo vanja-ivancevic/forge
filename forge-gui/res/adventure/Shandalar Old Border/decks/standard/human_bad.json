@@ -1,10 +1,33 @@
-{                                    
-"name":"Human bad",
-  "template":
-  {
-   "count":80,
-   "colors":["White","Blue","Green"],
-   "tribe":"Human",
-   "rares":0.1
-  }
+{
+  "name": "Human bad",
+  "mainDeck": [
+    {
+      "count": 12,
+      "cardName": "Plains|MMQ"
+    },
+    {
+      "count": 12,
+      "cardName": "Island|MMQ"
+    },
+    {
+      "count": 8,
+      "cardName": "Forest|MMQ"
+    },
+    {
+      "count": 32,
+      "subTypes": ["Human"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Human"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 8,
+      "colors": ["White", "Blue", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

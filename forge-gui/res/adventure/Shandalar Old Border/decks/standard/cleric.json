@@ -1,12 +1,25 @@
-{                                    
-"name":"Cleric",
-  "template":
-  {
-   "count":60,
-   "colors":["White"],
-   "tribe":"Cleric",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Cleric",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Plains|5ED"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Cleric"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Cleric"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 4,
+      "colors": ["White"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2]
+    }
+  ]
 }

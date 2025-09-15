@@ -1,9 +1,19 @@
-{                                    
-"name":"Black bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Black"], 
-   "rares":0.1
-  }
+{
+  "name": "Black bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Swamp|MIR"
+    },
+    {
+      "count": 40,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "colors": ["Black"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

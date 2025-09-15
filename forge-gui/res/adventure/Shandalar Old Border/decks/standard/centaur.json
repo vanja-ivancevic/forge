@@ -1,10 +1,33 @@
-{                                    
-"name":"Centaur",
-  "template":
-  {
-   "count":60,
-   "colors":["White","Green"],
-   "tribe":"Centaur",        
-   "rares":0.6
-  }
+{
+  "name": "Centaur",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Plains|INV"
+    },
+    {
+      "count": 10,
+      "cardName": "Forest|INV"
+    },
+    {
+      "count": 4,
+      "cardName": "Brushland|ICE"
+    },
+    {
+      "count": 16,
+      "subTypes": ["Centaur"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Centaur"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 8,
+      "colors": ["White", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

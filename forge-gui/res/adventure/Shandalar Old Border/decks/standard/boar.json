@@ -1,12 +1,25 @@
-{                                    
-"name":"Boar",
-  "template":
-  {
-   "count":60,
-   "colors":["Green"],
-   "tribe":"Boar",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.4
-  }
+{
+  "name": "Boar",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Forest|TMP"
+    },
+    {
+      "count": 24,
+      "subTypes": ["Boar"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Boar"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 4,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2]
+    }
+  ]
 }

@@ -1,12 +1,37 @@
-{                                    
-"name":"Snake",
-  "template":
-  {
-   "count":60,
-   "colors":["Green","Blue","Black"],
-   "tribe":"Snake",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.8
-  }
+{
+  "name": "Snake",
+  "mainDeck": [
+    {
+      "count": 8,
+      "cardName": "Forest|2ED"
+    },
+    {
+      "count": 8,
+      "cardName": "Island|2ED"
+    },
+    {
+      "count": 6,
+      "cardName": "Swamp|2ED"
+    },
+    {
+      "count": 2,
+      "cardName": "Skyshroud Forest|TMP"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Snake"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Snake"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Green", "Blue", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

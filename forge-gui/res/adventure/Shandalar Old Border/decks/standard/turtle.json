@@ -1,12 +1,33 @@
-{                                    
-"name":"Turtle",
-  "template":
-  {
-   "count":60,
-   "colors":["Blue","Green"],
-   "tribe":"Turtle",        
-   "tribeCards":0.5,
-   "tribeSynergyCards":0.2,
-   "rares":0.5
-  }
+{
+  "name": "Turtle",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Island|MMQ"
+    },
+    {
+      "count": 10,
+      "cardName": "Forest|MMQ"
+    },
+    {
+      "count": 4,
+      "cardName": "Yavimaya Coast|APO"
+    },
+    {
+      "count": 15,
+      "subTypes": ["Turtle"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Turtle"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 9,
+      "colors": ["Blue", "Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

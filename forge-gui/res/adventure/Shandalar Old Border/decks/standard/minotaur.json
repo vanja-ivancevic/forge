@@ -1,11 +1,25 @@
-{                                    
-"name":"Minotaur",
-  "template":
-  {
-   "count":60,
-   "colors":["Red"],
-   "tribe":"Minotaur",
-   "tribeSynergyCards":0.1,
-   "rares":0.8
-  }
+{
+  "name": "Minotaur",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Mountain|MIR"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Minotaur"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Minotaur"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Red"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

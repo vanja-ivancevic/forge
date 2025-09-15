@@ -1,10 +1,25 @@
-{                                    
-"name":"Treefolk",
-  "template":
-  {
-   "count":60,
-   "colors":["Green"],
-   "tribe":"Treefolk",        
-   "rares":0.8
-  }
+{
+  "name": "Treefolk",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Forest|USG"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Treefolk"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Treefolk"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,11 +1,25 @@
-{                                    
-"name":"Zombie good",
-  "template":
-  {
-   "count":60,
-   "colors":["Black"],
-   "tribe":"Zombie",        
-   "tribeCards":1.0,
-   "rares":0.8
-  }
+{
+  "name": "Zombie good",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Swamp|ONS"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Zombie"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Zombie"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

@@ -1,10 +1,19 @@
-{                                    
-"name":"Goblin bad",
-  "template":
-  {
-   "count":80,
-   "colors":["Red"],
-   "tribe":"Goblin",
-   "rares":0.1
-  }
+{
+  "name": "Goblin bad",
+  "mainDeck": [
+    {
+      "count": 32,
+      "cardName": "Mountain|TMP"
+    },
+    {
+      "count": 40,
+      "subTypes": ["Goblin"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 8,
+      "subTypes": ["Goblin"],
+      "rarity": ["Rare", "Mythic Rare"]
+    }
+  ]
 }

@@ -1,12 +1,37 @@
-{                                    
-"name":"Ooze",
-  "template":
-  {
-   "count":60,
-   "colors":["Green","Blue","Black"],
-   "tribe":"Ooze",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.2,
-   "rares":0.6
-  }
+{
+  "name": "Ooze",
+  "mainDeck": [
+    {
+      "count": 8,
+      "cardName": "Forest|USG"
+    },
+    {
+      "count": 8,
+      "cardName": "Island|USG"
+    },
+    {
+      "count": 6,
+      "cardName": "Swamp|USG"
+    },
+    {
+      "count": 2,
+      "cardName": "Pine Barrens|TMP"
+    },
+    {
+      "count": 20,
+      "subTypes": ["Ooze"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 12,
+      "subTypes": ["Ooze"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 4,
+      "colors": ["Green", "Blue", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

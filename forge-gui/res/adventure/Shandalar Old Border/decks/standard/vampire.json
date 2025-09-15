@@ -1,11 +1,25 @@
-{                                    
-"name":"Vampire",
-  "template":
-  {
-   "count":60,
-   "colors":["Black"],
-   "tribe":"Vampire",        
-   "tribeCards":1.0,
-   "rares":0.8
-  }
+{
+  "name": "Vampire",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Swamp|TMP"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Vampire"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Vampire"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

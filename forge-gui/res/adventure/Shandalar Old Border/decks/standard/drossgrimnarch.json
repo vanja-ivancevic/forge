@@ -1,12 +1,33 @@
-{                                    
-"name":"Dross Grimnarch",
-  "template":
-  {
-   "count":60,
-   "colors":["Black, Blue"],
-   "tribe":"Phyrexian",        
-   "tribeCards":1.0,
-   "tribeSynergyCards":0.40,
-   "rares":0.4
-  }
+{
+  "name": "Dross Grimnarch",
+  "mainDeck": [
+    {
+      "count": 10,
+      "cardName": "Swamp|7ED"
+    },
+    {
+      "count": 10,
+      "cardName": "Island|7ED"
+    },
+    {
+      "count": 4,
+      "cardName": "Underground River|5ED"
+    },
+    {
+      "count": 22,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 9,
+      "subTypes": ["Phyrexian"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Black", "Blue"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }

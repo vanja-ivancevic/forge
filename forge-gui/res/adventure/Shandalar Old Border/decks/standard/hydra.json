@@ -1,11 +1,25 @@
-{                                    
-"name":"Hydra",
-  "template":
-  {
-   "count":60,
-   "colors":["Red"],
-   "tribe":"Hydra",        
-   "tribeCards":8.0,
-   "rares":0.8
-  }
+{
+  "name": "Hydra",
+  "mainDeck": [
+    {
+      "count": 24,
+      "cardName": "Forest|6ED"
+    },
+    {
+      "count": 12,
+      "subTypes": ["Hydra"],
+      "rarity": ["Common", "Uncommon"]
+    },
+    {
+      "count": 19,
+      "subTypes": ["Hydra"],
+      "rarity": ["Rare", "Mythic Rare"]
+    },
+    {
+      "count": 5,
+      "colors": ["Green"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3]
+    }
+  ]
 }
