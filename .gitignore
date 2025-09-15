@@ -91,6 +91,9 @@ forge-gui/tools/PerSetTrackingResults
 /forge-gui/res/adventure/*.tiled-project
 /forge-gui/res/adventure/*.tiled-session
 
+# Local build outputs
+dist/
+
 # Ignore python temporaries
 __pycache__
 *.pyc
