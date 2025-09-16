@@ -4,7 +4,7 @@
   <export target="wastetown..tmx" format="tmx"/>
  </editorsettings>
  <properties>
-  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Throne of Bone&quot; ]}"/>
+  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Throne of Bone|3ED|3ED&quot; ]}"/>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
  <tileset firstgid="10113" source="../../tileset/buildings.tsx"/>
@@ -34,7 +34,7 @@
  </layer>
  <objectgroup id="4" name="Objects">
   <properties>
-   <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Throne of Bone&quot; ]}"/>
+   <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Throne of Bone|3ED|3ED&quot; ]}"/>
   </properties>
   <object id="38" template="../../obj/entry_up.tx" x="192" y="274.665" width="48" height="16">
    <properties>

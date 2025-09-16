@@ -134,7 +134,7 @@ public class TileMapScene extends HudScene {
         AdventureQuestController.instance().mostRecentPOI = point;
         rootPoint = point;
         oldMap = point.getData().map;
-        map = new TemplateTmxMapLoader().load(Config.instance().getCommonFilePath(point.getData().map));
+        map = new TemplateTmxMapLoader().load(Config.instance().getFile(point.getData().map).path());
         ((MapStage) stage).setPointOfInterest(getPointOfInterestChanges());
         stage.getPlayerSprite().setPosition(0, 0);
         WorldSave.getCurrentSave().getWorld().setSeed(point.getSeedOffset());

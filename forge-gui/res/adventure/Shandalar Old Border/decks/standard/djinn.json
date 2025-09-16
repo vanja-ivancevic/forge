@@ -2,30 +2,36 @@
   "name": "Djinn",
   "mainDeck": [
     {
-      "count": 10,
+      "count": 7,
       "cardName": "Island|TMP"
     },
     {
-      "count": 10,
+      "count": 7,
       "cardName": "Mountain|TMP"
     },
+        {
+      "count": 7,
+      "cardName": "Plains|TMP"
+    },
     {
-      "count": 4,
+      "count": 3,
       "cardName": "Shivan Reef|APC"
     },
     {
       "count": 17,
       "subTypes": ["Djinn"],
+      "colors": ["Blue", "Red"," White"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 12,
       "subTypes": ["Djinn"],
+      "colors": ["Blue", "Red"," White"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {
       "count": 7,
-      "colors": ["Blue", "Red"],
+      "colors": ["Blue", "Red"," White"],
       "rarity": ["Common", "Uncommon"],
       "manaCosts": [1, 2, 3]
     }
