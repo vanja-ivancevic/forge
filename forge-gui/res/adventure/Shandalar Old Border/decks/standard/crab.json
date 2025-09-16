@@ -8,11 +8,13 @@
     {
       "count": 24,
       "subTypes": ["Crab"],
+      "colors": ["Blue"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Crab"],
+      "colors": ["Blue"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

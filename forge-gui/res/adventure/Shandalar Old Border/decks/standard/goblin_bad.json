@@ -8,11 +8,13 @@
     {
       "count": 40,
       "subTypes": ["Goblin"],
+      "colors": ["Red"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Goblin"],
+      "colors": ["Red"],
       "rarity": ["Rare", "Mythic Rare"]
     }
   ]

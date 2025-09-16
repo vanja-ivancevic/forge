@@ -16,11 +16,13 @@
     {
       "count": 22,
       "subTypes": ["Phyrexian"],
+      "colors": ["Black", "Blue"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 9,
       "subTypes": ["Phyrexian"],
+      "colors": ["Black", "Blue"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

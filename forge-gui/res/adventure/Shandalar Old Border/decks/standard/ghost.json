@@ -8,11 +8,13 @@
     {
       "count": 12,
       "subTypes": ["Spirit"],
+      "colors": ["Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 19,
       "subTypes": ["Spirit"],
+      "colors": ["Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

@@ -8,11 +8,13 @@
     {
       "count": 24,
       "subTypes": ["Boar"],
+      "colors": ["Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Boar"],
+      "colors": ["Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

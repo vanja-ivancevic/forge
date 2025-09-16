@@ -8,11 +8,13 @@
     {
       "count": 24,
       "subTypes": ["Bear"],
+            "colors": ["Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Bear"],
+            "colors": ["Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

@@ -8,11 +8,13 @@
     {
       "count": 40,
       "subTypes": ["Merfolk"],
+      "colors": ["Blue"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Merfolk"],
+      "colors": ["Blue"],
       "rarity": ["Rare", "Mythic Rare"]
     }
   ]

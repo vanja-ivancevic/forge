@@ -20,11 +20,13 @@
     {
       "count": 20,
       "subTypes": ["Ooze"],
+      "colors": ["Green", "Blue", "Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 12,
       "subTypes": ["Ooze"],
+      "colors": ["Green", "Blue", "Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

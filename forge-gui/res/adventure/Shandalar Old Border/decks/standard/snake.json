@@ -20,11 +20,13 @@
     {
       "count": 12,
       "subTypes": ["Snake"],
+      "colors": ["Green", "Blue", "Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 19,
       "subTypes": ["Snake"],
+      "colors": ["Green", "Blue", "Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

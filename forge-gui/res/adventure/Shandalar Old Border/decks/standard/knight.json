@@ -8,11 +8,13 @@
     {
       "count": 12,
       "subTypes": ["Knight"],
+      "colors": ["White"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 19,
       "subTypes": ["Knight"],
+      "colors": ["White"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

@@ -8,11 +8,13 @@
     {
       "count": 18,
       "subTypes": ["Angel"],
+      "colors": ["White"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 9,
       "subTypes": ["Angel"],
+      "colors": ["White"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

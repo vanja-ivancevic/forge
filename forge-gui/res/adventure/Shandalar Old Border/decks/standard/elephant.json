@@ -16,11 +16,13 @@
     {
       "count": 16,
       "subTypes": ["Elephant"],
+      "colors": ["White", "Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 12,
       "subTypes": ["Elephant"],
+      "colors": ["White", "Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

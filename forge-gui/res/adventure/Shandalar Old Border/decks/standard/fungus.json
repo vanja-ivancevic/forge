@@ -16,11 +16,13 @@
     {
       "count": 24,
       "subTypes": ["Fungus"],
+      "colors": ["Green", "Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 3,
       "subTypes": ["Fungus"],
+      "colors": ["Green", "Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

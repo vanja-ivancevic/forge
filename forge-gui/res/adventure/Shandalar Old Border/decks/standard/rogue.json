@@ -8,11 +8,13 @@
     {
       "count": 24,
       "subTypes": ["Assassin"],
+      "colors": ["Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Assassin"],
+      "colors": ["Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

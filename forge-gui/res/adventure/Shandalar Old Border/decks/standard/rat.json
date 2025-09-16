@@ -8,11 +8,13 @@
     {
       "count": 18,
       "subTypes": ["Rat"],
+      "colors": ["Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 9,
       "subTypes": ["Rat"],
+      "colors": ["Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

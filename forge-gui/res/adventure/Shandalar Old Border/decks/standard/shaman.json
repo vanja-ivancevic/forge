@@ -16,11 +16,13 @@
     {
       "count": 24,
       "subTypes": ["Shaman"],
+      "colors": ["Red", "Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 8,
       "subTypes": ["Shaman"],
+      "colors": ["Red", "Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

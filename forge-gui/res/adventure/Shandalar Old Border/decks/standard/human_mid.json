@@ -20,11 +20,13 @@
     {
       "count": 18,
       "subTypes": ["Human"],
+      "colors": ["White", "Blue", "Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 9,
       "subTypes": ["Human"],
+      "colors": ["White", "Blue", "Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

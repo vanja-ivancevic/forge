@@ -16,11 +16,13 @@
     {
       "count": 15,
       "subTypes": ["Faerie"],
+      "colors": ["Blue", "Green"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 12,
       "subTypes": ["Faerie"],
+      "colors": ["Blue", "Green"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {

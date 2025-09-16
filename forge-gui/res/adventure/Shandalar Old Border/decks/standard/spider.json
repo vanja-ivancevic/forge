@@ -16,11 +16,13 @@
     {
       "count": 17,
       "subTypes": ["Spider"],
+      "colors": ["Green", "Black"],
       "rarity": ["Common", "Uncommon"]
     },
     {
       "count": 14,
       "subTypes": ["Spider"],
+      "colors": ["Green", "Black"],
       "rarity": ["Rare", "Mythic Rare"]
     },
     {
