@@ -769,7 +769,8 @@
       },
       "startItems": [
         "Manasight Amulet",
-        "Leather Boots"
+        "Leather Boots",
+        "Landscape Sketchbook - Seventh Edition"
       ]
     },
     {
@@ -807,7 +808,8 @@
         "G": "decks/starter/pile_green_n.json"
       },
       "startItems": [
-        "Leather Boots"
+        "Leather Boots",
+        "Landscape Sketchbook - Seventh Edition"
       ]
     },
     {
@@ -842,7 +844,10 @@
         "U": "decks/starter/pile_blue_h.json",
         "R": "decks/starter/pile_red_h.json",
         "G": "decks/starter/pile_green_h.json"
-      }
+      },
+      "startItems": [
+        "Landscape Sketchbook - Seventh Edition"
+      ]
     },
     {
       "name": "Insane",
@@ -876,13 +881,16 @@
         "U": "decks/starter/pile_blue_h.json",
         "R": "decks/starter/pile_red_h.json",
         "G": "decks/starter/pile_green_h.json"
-      }
+      },
+      "startItems": [
+        "Landscape Sketchbook - Seventh Edition"
+      ]
     }
   ],
   "starterEditions": [
-    "***"
+    "7ED"
   ],
   "starterEditionNames": [
-    "Old Border"
+    "Seventh Edition"
   ]
 }

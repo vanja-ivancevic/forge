@@ -156,6 +156,12 @@
     "questItem": true
   },
   {
+    "name": "Landscape Sketchbook - Seventh Edition",
+    "description": "A leather bound notebook containing sketches of classic Dominarian landscapes",
+    "iconName": "LandscapeSketchbook",
+    "questItem": true
+  },
+  {
     "name": "Landscape Sketchbook - Coldsnap",
     "description": "A leather bound notebook containing sketches of frost covered vistas",
     "iconName": "LandscapeSketchbook",
