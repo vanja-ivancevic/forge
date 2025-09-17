@@ -10,14 +10,15 @@
       "cardName": "Swamp|MMQ"
     },
     {
-      "count": 40,
-      "subTypes": ["Devil"],
-      "rarity": ["Common", "Uncommon"]
-    },
-    {
       "count": 8,
       "subTypes": ["Devil"],
-      "rarity": ["Rare", "Mythic Rare"]
+      "rarity": ["Common", "Uncommon","Rare"]
+    },
+    {
+      "count": 40,
+      "colors": ["Red", "Black"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
     }
   ]
 }
