@@ -135,85 +135,85 @@
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	}
 ]</property>
    </properties>

@@ -2,22 +2,50 @@
   "name": "Hydra",
   "mainDeck": [
     {
-      "count": 24,
+      "count": 12,
       "cardName": "Forest|6ED"
     },
     {
       "count": 12,
-      "subTypes": ["Hydra"],
-      "rarity": ["Common", "Uncommon"]
+      "cardName": "Mountain|6ED"
     },
     {
-      "count": 19,
+      "count": 4,
       "subTypes": ["Hydra"],
-      "rarity": ["Rare", "Mythic Rare"]
+      "rarity": ["Common", "Uncommon", "Rare", "Mythic Rare"]
     },
     {
-      "count": 5,
+      "count": 8,
+      "colors": ["Red", "Green"],
+      "cardTypes": ["Creature"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [3, 4, 5, 6]
+    },
+    {
+      "count": 6,
+      "colors": ["Red", "Green"],
+      "cardTypes": ["Creature"],
+      "rarity": ["Rare", "Mythic Rare"],
+      "manaCosts": [4, 5, 6, 7, 8]
+    },
+    {
+      "count": 8,
+      "colors": ["Red"],
+      "cardTypes": ["Sorcery", "Instant"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    },
+    {
+      "count": 6,
       "colors": ["Green"],
+      "cardTypes": ["Sorcery", "Instant"],
+      "rarity": ["Common", "Uncommon"],
+      "manaCosts": [1, 2, 3, 4]
+    },
+    {
+      "count": 4,
+      "colors": ["Green"],
+      "cardTypes": ["Creature"],
       "rarity": ["Common", "Uncommon"],
       "manaCosts": [1, 2, 3]
     }

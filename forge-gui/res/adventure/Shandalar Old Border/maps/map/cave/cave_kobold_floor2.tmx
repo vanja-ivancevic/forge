@@ -41,7 +41,7 @@
   <object id="77" template="../../obj/gold.tx" x="168.5" y="90.25"/>
   <object id="78" template="../../obj/enemy.tx" x="169.135" y="119.291">
    <properties>
-    <property name="effect" value="{ &quot;startBattleWithCard&quot;: [ &quot;Kobold Taskmaster&quot; ] }"/>
+    <property name="effect" value="{ &quot;startBattleWithCard&quot;: [ &quot;Kobold Taskmaster|LEG|1&quot; ] }"/>
     <property name="enemy" value="Kobold Dragoncaller"/>
     <property name="threatRange" type="int" value="100"/>
    </properties>

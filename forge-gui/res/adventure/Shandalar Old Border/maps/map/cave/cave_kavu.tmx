@@ -5,7 +5,7 @@
  </editorsettings>
  <properties>
   <property name="dungeonEffect">{
-  &quot;startBattleWithCard&quot;: [ &quot;Kavu Lair&quot; ],
+  &quot;startBattleWithCard&quot;: [ &quot;Kavu Lair|INV|1&quot; ],
 }</property>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
@@ -103,9 +103,9 @@
    <properties>
     <property name="effect">{
  &quot;lifeModifier&quot;: 4,
- &quot;startBattleWithCard&quot;: [ &quot;Coveted Jewel&quot; ]
+  &quot;startBattleWithCard&quot;: [ &quot;Slate of Ancestry|ONS|1&quot; ]
  &quot;opponent&quot;: {
-   &quot;startBattleWithCard&quot;: [ &quot;Jungle Barrier&quot; ]
+   &quot;startBattleWithCard&quot;: [ &quot;Jungle Barrier|APC|1&quot; ]
  }
 }</property>
     <property name="enemy" value="Kavu"/>
@@ -120,12 +120,12 @@
   </object>
   <object id="65" template="../../obj/scroll.tx" x="104.667" y="141">
    <properties>
-    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Coastal Drake&quot;, &quot;count&quot;: 1 } ]"/>
+    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Coastal Drake|APC|1&quot;, &quot;count&quot;: 1 } ]"/>
    </properties>
   </object>
   <object id="66" template="../../obj/scroll.tx" x="336.333" y="58.3333">
    <properties>
-    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Coveted Jewel&quot;, &quot;count&quot;: 1 } ]"/>
+    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Slate of Ancestry|ONS|1&quot;, &quot;count&quot;: 1 } ]"/>
    </properties>
   </object>
   <object id="69" template="../../obj/manashards.tx" x="350.486" y="220.639"/>

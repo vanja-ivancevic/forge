@@ -4,7 +4,7 @@
   <export target="wastetown..tmx" format="tmx"/>
  </editorsettings>
  <properties>
-  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Crystal Rod|3ED|3ED&quot; ]}"/>
+  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Crystal Rod|LEA|1&quot; ]}"/>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
  <tileset firstgid="10113" source="../../tileset/buildings.tsx"/>
@@ -44,7 +44,7 @@
 &quot;type&quot;: &quot;card&quot;,
 &quot;probability&quot;: 1,
 &quot;count&quot;: 1,
-&quot;cardName&quot;: &quot;Staff of the Mind Magus&quot;}]</property>
+&quot;cardName&quot;: &quot;Crystal Rod|LEA|1&quot;}]</property>
     <property name="spawn.Normal" type="bool" value="true"/>
    </properties>
   </object>
@@ -67,19 +67,19 @@
    <properties>
     <property name="reward">[
   {
-    &quot;editions&quot;: [ &quot;VOW&quot; ],
+    &quot;editions&quot;: [ &quot;STH&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 10,
     &quot;rarity&quot;: [ &quot;Common&quot; ]
   },
   {
-    &quot;editions&quot;: [ &quot;VOW&quot; ],
+    &quot;editions&quot;: [ &quot;STH&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 3,
     &quot;rarity&quot;: [ &quot;Uncommon&quot; ]
   },
   {
-    &quot;editions&quot;: [ &quot;VOW&quot; ],
+    &quot;editions&quot;: [ &quot;STH&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 1,
     &quot;rarity&quot;: [ &quot;Rare&quot;, &quot;Mythic Rare&quot; ]

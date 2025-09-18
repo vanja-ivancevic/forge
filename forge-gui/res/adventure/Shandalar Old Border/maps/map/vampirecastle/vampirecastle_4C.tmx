@@ -40,15 +40,15 @@
   </object>
   <object id="79" template="../../obj/enemy.tx" x="744.5" y="143.954">
    <properties>
-    <property name="effect">{ &quot;startBattleWithCardInCommandZone&quot;: [ &quot;Sorin's Boss Effect&quot;]
+    <property name="effect">{ &quot;startBattleWithCard&quot;: [ &quot;Sengir Vampire|LEA|1&quot;, &quot;Baron Sengir&quot;, &quot;Vampiric Tutor&quot; ]
 }</property>
     <property name="enemy" value="Sorin"/>
     <property name="reward">[
   {
-    &quot;type&quot;: &quot;item&quot;,
+    &quot;type&quot;: &quot;card&quot;,
     &quot;probability&quot;: 1,
     &quot;count&quot;: 1,
-    &quot;itemName&quot;: &quot;Sorin's Amulet&quot;,
+    &quot;cardName&quot;: &quot;Vampiric Tutor|VIS|1&quot;,
   },
   {
     &quot;type&quot;: &quot;item&quot;,
@@ -74,85 +74,85 @@
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	}
 ]</property>
    </properties>
@@ -164,85 +164,85 @@
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Infernal Grasp&quot;
+		&quot;cardName&quot;: &quot;Murder|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Crippling Fear&quot;
+		&quot;cardName&quot;: &quot;Vendetta|MMQ|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Deadly Dispute&quot;
+		&quot;cardName&quot;: &quot;Sign in Blood|PRM|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Village Rites&quot;
+		&quot;cardName&quot;: &quot;Bone Harvest|MIR|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Tragic Slip&quot;
+		&quot;cardName&quot;: &quot;Dark Banishing|ICE|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;cardName&quot;: &quot;Defile&quot;
+		&quot;cardName&quot;: &quot;Terror|LEA|1&quot;
 	},
 	{
 		&quot;type&quot;: &quot;card&quot;,
 		&quot;probability&quot;: 0.5,
 		&quot;count&quot;: 1,
-		&quot;itemName&quot;: &quot;Murder&quot;
+		&quot;cardName&quot;: &quot;Diabolic Edict|PMEI|1&quot;
 	}
 ]</property>
    </properties>

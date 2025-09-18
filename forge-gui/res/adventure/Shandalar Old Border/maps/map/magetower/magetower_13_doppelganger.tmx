@@ -61,7 +61,7 @@
     <property name="effect">{
  &quot;lifeModifier&quot;: 15,
  &quot;changeStartCards&quot;: 2,
- &quot;startBattleWithCard&quot;: [ &quot;Fellwar Stone&quot; ]
+ &quot;startBattleWithCard&quot;: [ &quot;Fellwar Stone|DRK|1&quot; ]
 }</property>
     <property name="enemy" value="Doppelganger"/>
    </properties>
@@ -71,7 +71,7 @@
     <property name="effect">{
  &quot;lifeModifier&quot;: 15,
  &quot;changeStartCards&quot;: 2,
- &quot;startBattleWithCard&quot;: [ &quot;Fellwar Stone&quot;, &quot;Frozen Aether&quot; ]
+ &quot;startBattleWithCard&quot;: [ &quot;Fellwar Stone|DRK|1&quot;, &quot;Frozen Aether&quot; ]
 }</property>
     <property name="enemy" value="Doppelganger"/>
    </properties>
@@ -80,7 +80,7 @@
    <properties>
     <property name="effect">{
  &quot;lifeModifier&quot;: 10,
- &quot;startBattleWithCard&quot;: [ &quot;Hesitation&quot; ]
+ &quot;startBattleWithCard&quot;: [ &quot;Hesitation|STH|1&quot; ]
 }</property>
     <property name="enemy" value="Master Blue Wizard"/>
    </properties>
@@ -98,7 +98,7 @@
  &quot;lifeModifier&quot;: 30,
  &quot;changeStartCards&quot;: 4,
   &quot;opponent&quot;: {
-    &quot;startBattleWithCard&quot;: [ &quot;King Suleiman&quot; ],
+    &quot;startBattleWithCard&quot;: [ &quot;King Suleiman|ARN|1&quot; ],
   }
 }</property>
     <property name="enemy" value="Djinn"/>
@@ -115,7 +115,7 @@
   </object>
   <object id="68" template="../../obj/scroll.tx" x="96" y="352">
    <properties>
-    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Storm Crow&quot;, &quot;count&quot;: 1 } ]"/>
+    <property name="reward" value="[ { &quot;type&quot;: &quot;card&quot;, &quot;cardName&quot;: &quot;Storm Crow|ALL|1&quot;, &quot;count&quot;: 1 } ]"/>
    </properties>
   </object>
   <object id="69" template="../../obj/booster.tx" x="96" y="368">

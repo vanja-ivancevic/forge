@@ -4,7 +4,7 @@
   <export target="wastetown..tmx" format="tmx"/>
  </editorsettings>
  <properties>
-  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Muck Rats|PO2|PO2&quot; ]}"/>
+  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Muck Rats|PO2|1&quot; ]}"/>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
  <tileset firstgid="10113" source="../../tileset/buildings.tsx"/>
@@ -105,7 +105,7 @@
 &quot;type&quot;: &quot;card&quot;,
 &quot;probability&quot;: 1,
 &quot;count&quot;: 1,
-&quot;cardName&quot;: &quot;Staff of the Flame Magus&quot;}]</property>
+&quot;cardName&quot;: &quot;Iron Star|LEA|1&quot;}]</property>
    </properties>
   </object>
  </objectgroup>

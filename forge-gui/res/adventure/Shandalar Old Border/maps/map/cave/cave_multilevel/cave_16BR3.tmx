@@ -38,7 +38,7 @@
   </object>
   <object id="78" template="../../../obj/enemy.tx" x="314.961" y="166.653" visible="1">
    <properties>
-    <property name="effect" value="{ &quot;startBattleWithCard&quot;: [ &quot;Dralnu's Crusade&quot; ] }"/>
+    <property name="effect" value="{ &quot;startBattleWithCard&quot;: [ &quot;Dralnu's Crusade|PLS|1&quot; ] }"/>
     <property name="enemy" value="Undead Goblin"/>
     <property name="hidden" type="bool" value="false"/>
     <property name="pursueRange" type="float" value="60"/>

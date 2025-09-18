@@ -5,7 +5,7 @@
  </editorsettings>
  <properties>
   <property name="dungeonEffect">{
-  &quot;startBattleWithCard&quot;: [ &quot;Burning Sands&quot; ],
+  &quot;startBattleWithCard&quot;: [ &quot;Burning Sands|ODY|1&quot; ],
 }</property>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
@@ -145,7 +145,7 @@
    <properties>
     <property name="effect">{
  &quot;lifeModifier&quot;: 4,
- &quot;startBattleWithCard&quot;: [ &quot;Flagstones of Trokair|TSR|1&quot; ]
+ &quot;startBattleWithCard&quot;: [ &quot;Ancient Tomb|TMP|1&quot; ]
 }</property>
     <property name="enemy" value="Axgard Dwarf"/>
    </properties>
@@ -154,7 +154,7 @@
    <properties>
     <property name="effect">{
  &quot;lifeModifier&quot;: 4,
- &quot;startBattleWithCard&quot;: [ &quot;Desert|AFC|1&quot; ]
+ &quot;startBattleWithCard&quot;: [ &quot;Desert|ARN|1&quot; ]
 }</property>
     <property name="enemy" value="Pyromancer"/>
    </properties>

@@ -4,7 +4,7 @@
   <export target="wastetown..tmx" format="tmx"/>
  </editorsettings>
  <properties>
-  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Ivory Cup|3ED|3ED&quot; ]}"/>
+  <property name="dungeonEffect" value="{&quot;startBattleWithCard&quot;: [ &quot;Ivory Cup|LEA|1&quot; ]}"/>
  </properties>
  <tileset firstgid="1" source="../../tileset/main.tsx"/>
  <tileset firstgid="10113" source="../../tileset/buildings.tsx"/>
@@ -55,26 +55,26 @@
 &quot;type&quot;: &quot;card&quot;,
 &quot;probability&quot;: 1,
 &quot;count&quot;: 1,
-&quot;cardName&quot;: &quot;Staff of the Sun Magus&quot;}]</property>
+&quot;cardName&quot;: &quot;Ivory Cup|LEA|1&quot;}]</property>
    </properties>
   </object>
   <object id="67" template="../../obj/booster.tx" x="208.5" y="78">
    <properties>
     <property name="reward">[
   {
-    &quot;editions&quot;: [ &quot;NEO&quot; ],
+    &quot;editions&quot;: [ &quot;VIS&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 10,
     &quot;rarity&quot;: [ &quot;Common&quot; ]
   },
   {
-    &quot;editions&quot;: [ &quot;NEO&quot; ],
+    &quot;editions&quot;: [ &quot;VIS&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 3,
     &quot;rarity&quot;: [ &quot;Uncommon&quot; ]
   },
   {
-    &quot;editions&quot;: [ &quot;NEO&quot; ],
+    &quot;editions&quot;: [ &quot;VIS&quot; ],
     &quot;type&quot;: &quot;card&quot;,
     &quot;count&quot;: 1,
     &quot;rarity&quot;: [ &quot;Rare&quot;, &quot;Mythic Rare&quot; ]
