@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureWrap;
@@ -116,6 +117,33 @@ public enum FSkinTexture implements FImage {
         load("");
     }
 
+    private boolean isAdventureBackground() {
+        return name().startsWith("ADV_");
+    }
+
+    private FileHandle getAdventureBackgroundFile() {
+        String adventureDirectory = GuiBase.getAdventureDirectory();
+        if (adventureDirectory == null || adventureDirectory.isEmpty()) {
+            return null;
+        }
+
+        // Check adventure-specific skin directory first
+        String adventureSkinPath = adventureDirectory + "skin/" + filename;
+        FileHandle adventureFile = Gdx.files.absolute(adventureSkinPath);
+        if (adventureFile.exists()) {
+            return adventureFile;
+        }
+
+        // Check common adventure skin directory
+        String commonSkinPath = ForgeConstants.ADVENTURE_COMMON_DIR + "skin/" + filename;
+        FileHandle commonFile = Gdx.files.absolute(commonSkinPath);
+        if (commonFile.exists()) {
+            return commonFile;
+        }
+
+        return null;
+    }
+
     public boolean load(String planeName) {
         if (hasError)
             return false;
@@ -123,7 +151,21 @@ public enum FSkinTexture implements FImage {
             texture = null; //reset
             this.filename = ImageFetcher.getPlanechaseFilename(planeName);
         }
-        FileHandle preferredFile = isPlanechaseBG ? FSkin.getCachePlanechaseFile(filename) : FSkin.getSkinFile(filename);
+
+        FileHandle preferredFile;
+        if (isPlanechaseBG) {
+            preferredFile = FSkin.getCachePlanechaseFile(filename);
+        } else if (isAdventureBackground()) {
+            // For adventure backgrounds, check adventure directories first
+            preferredFile = getAdventureBackgroundFile();
+            if (preferredFile == null) {
+                // Fall back to skin directories
+                preferredFile = FSkin.getSkinFile(filename);
+            }
+        } else {
+            preferredFile = FSkin.getSkinFile(filename);
+        }
+
         if (preferredFile.exists()) {
             try {
                 texture = Forge.getAssets().getTexture(preferredFile, false);
