@@ -83,9 +83,12 @@ public class AdventureEventController implements Serializable {
 
         AdventureEventData e;
         // After a certain number of wins, stop offering Jumpstart events
-        if (Current.player().getStatistic().totalWins() < 10 &&
-                random.nextInt(10) <= 2) {
+        int roll = random.nextInt(10);
+        if (Current.player().getStatistic().totalWins() < 10 && roll <= 2) {
             e = new AdventureEventData(eventSeed, EventFormat.Jumpstart);
+        } else if (roll <= 4) {
+            // 20% chance for Sealed deck tournament
+            e = new AdventureEventData(eventSeed, EventFormat.Sealed);
         } else {
             e = new AdventureEventData(eventSeed, EventFormat.Draft);
         }

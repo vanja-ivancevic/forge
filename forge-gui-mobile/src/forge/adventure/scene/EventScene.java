@@ -188,6 +188,11 @@ public class EventScene extends MenuScene implements IAfterMatch {
                 } else if (currentEvent.format == AdventureEventController.EventFormat.Jumpstart && currentEvent.eventStatus == Ready) {
                     DeckEditScene.getInstance().loadEvent(currentEvent);
                     Forge.switchScene(DeckEditScene.getInstance());
+                } else if (currentEvent.format == AdventureEventController.EventFormat.Sealed
+                        && (currentEvent.eventStatus == Ready || currentEvent.eventStatus == Started)) {
+                    // Sealed uses deck editor like Jumpstart
+                    DeckEditScene.getInstance().loadEvent(currentEvent);
+                    Forge.switchScene(DeckEditScene.getInstance());
                 }
             }
         });
@@ -458,6 +463,13 @@ public class EventScene extends MenuScene implements IAfterMatch {
                         break;
                     case Jumpstart:
                         loadMetaDraft();
+                        break;
+                    case Sealed:
+                        // For sealed, go directly to deck editor - pool is already generated
+                        currentEvent.eventStatus = AdventureEventController.EventStatus.Ready;
+                        DeckEditScene.getInstance().loadEvent(currentEvent);
+                        Forge.switchScene(DeckEditScene.getInstance());
+                        break;
                 }
                 break;
             case Ready: //Commit to selected deck

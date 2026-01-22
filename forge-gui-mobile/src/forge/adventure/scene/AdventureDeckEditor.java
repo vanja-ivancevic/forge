@@ -259,6 +259,12 @@ public class AdventureDeckEditor extends FDeckEditor {
                         new AdventureDeckSectionPage(DeckSection.Main, ItemManagerConfig.DRAFT_POOL),
                         new AdventureDeckSectionPage(DeckSection.Sideboard, ItemManagerConfig.SIDEBOARD)};
             }
+            if (event.format == AdventureEventController.EventFormat.Sealed) {
+                // Sealed deck building - same UI as Jumpstart (pool in sideboard, build deck in main)
+                return new DeckEditorPage[]{
+                        new AdventureDeckSectionPage(DeckSection.Main, ItemManagerConfig.DRAFT_POOL),
+                        new AdventureDeckSectionPage(DeckSection.Sideboard, ItemManagerConfig.SIDEBOARD)};
+            }
             return new DeckEditorPage[]{};
         }
     }

@@ -17,6 +17,11 @@ import forge.game.GameType;
 import forge.gamemodes.limited.BoosterDraft;
 import forge.gamemodes.limited.LimitedPlayer;
 import forge.gamemodes.limited.LimitedPoolType;
+import forge.gamemodes.limited.SealedDeckBuilder;
+import forge.item.PaperCard;
+import forge.item.generation.BoosterGenerator;
+import forge.StaticData;
+import forge.deck.DeckSection;
 import forge.model.CardBlock;
 import forge.model.FModel;
 import forge.util.Aggregates;
@@ -49,6 +54,7 @@ public class AdventureEventData implements Serializable {
     private transient Random random = new Random();
     public Deck registeredDeck;
     public Deck draftedDeck; //Copy of registered before basic lands are added for event reward purposes
+    public Deck sealedPool; // Full card pool for sealed events
     public List<Deck> jumpstartBoosters = new ArrayList<>();
     public boolean isDraftComplete = false;
     public String description = "";
@@ -119,6 +125,9 @@ public class AdventureEventData implements Serializable {
             packConfiguration = new String[]{cardBlock.getLandSet().getCode(), cardBlock.getLandSet().getCode(), cardBlock.getLandSet().getCode()};
 
             setupJumpstartRewards();
+        } else if (format == AdventureEventController.EventFormat.Sealed) {
+            packConfiguration = getSealedBoosterConfiguration(cardBlock);
+            setupSealedRewards();
         }
 
         if(style == null) {
@@ -165,7 +174,7 @@ public class AdventureEventData implements Serializable {
             case Draft -> pickWeightedCardBlock();
             case Jumpstart -> pickJumpstartCardBlock();
             case Constructed -> null;
-            case Sealed -> null;
+            case Sealed -> pickSealedCardBlock();
         };
     }
 
@@ -360,6 +369,55 @@ public class AdventureEventData implements Serializable {
         //r3 will be the selected card packs
     }
 
+    private void setupSealedRewards() {
+        // Similar to draft rewards
+        rewardPacks = getRewardPacks(3);
+        if (cardBlock != null) {
+            rewards = new AdventureEventData.AdventureEventReward[4];
+            AdventureEventData.AdventureEventReward r0 = new AdventureEventData.AdventureEventReward();
+            AdventureEventData.AdventureEventReward r1 = new AdventureEventData.AdventureEventReward();
+            AdventureEventData.AdventureEventReward r2 = new AdventureEventData.AdventureEventReward();
+            AdventureEventData.AdventureEventReward r3 = new AdventureEventData.AdventureEventReward();
+            r0.minWins = 0;
+            r0.maxWins = 0;
+            r0.cardRewards = new Deck[]{rewardPacks[0]};
+            rewards[0] = r0;
+            r1.minWins = 1;
+            r1.maxWins = 3;
+            r1.cardRewards = new Deck[]{rewardPacks[1], rewardPacks[2]};
+            rewards[1] = r1;
+            r2.minWins = 2;
+            r2.maxWins = 3;
+            r2.itemRewards = new String[]{"Challenge Coin"};
+            rewards[2] = r2;
+            // r3 will be set in giveRewards() to award the sealed pool on champion win
+        }
+    }
+
+    private static String[] getSealedBoosterConfiguration(CardBlock block) {
+        // Standard sealed is 6 boosters from the block
+        int numPacks = block.getCntBoostersSealed();
+        if (numPacks <= 0) numPacks = 6; // Default to 6 if not specified
+        String[] config = new String[numPacks];
+        List<CardEdition> sets = block.getSets();
+        for (int i = 0; i < numPacks; i++) {
+            config[i] = sets.get(i % sets.size()).getCode();
+        }
+        return config;
+    }
+
+    private static CardBlock pickSealedCardBlock() {
+        // Reuse the same logic as draft for picking a valid card block
+        return pickWeightedCardBlock();
+    }
+
+    public List<PaperCard> generateSealedPool() {
+        List<PaperCard> pool = new ArrayList<>();
+        for (String setCode : packConfiguration) {
+            pool.addAll(BoosterGenerator.getBoosterPack(StaticData.instance().getBoosters().get(setCode)));
+        }
+        return pool;
+    }
 
     public String[] getBoosterConfiguration(CardBlock selectedBlock) {
         Random placeholder = MyRandom.getRandom();
@@ -495,6 +553,26 @@ public class AdventureEventData implements Serializable {
                     participant.registeredDeck.getMain().addAllFlat(chosen.getMain().toFlatList());
                 }
             }
+        } else if (format == AdventureEventController.EventFormat.Sealed) {
+            // Generate sealed pools for all participants
+            for (AdventureEventParticipant participant : participants) {
+                List<PaperCard> pool = generateSealedPool();
+
+                // Store the full pool for the human player
+                if (participant instanceof AdventureEventHuman) {
+                    sealedPool = new Deck();
+                    sealedPool.getOrCreate(DeckSection.Sideboard).add(pool);
+                    sealedPool.setName("Sealed Pool");
+                    // Human player starts with pool in sideboard, builds deck from it
+                    registeredDeck = new Deck();
+                    registeredDeck.getOrCreate(DeckSection.Sideboard).add(pool);
+                    participant.setDeck(registeredDeck);
+                } else {
+                    // AI builds a proper 2-color sealed deck
+                    Deck aiDeck = new SealedDeckBuilder(pool).buildDeck(cardBlock.getLandSet().getCode());
+                    participant.setDeck(aiDeck);
+                }
+            }
         }
 
         switch (this.style) {
@@ -618,6 +696,17 @@ public class AdventureEventData implements Serializable {
             registeredDeck.setName("Jumpstart Event Packs");
             rewards[3].cardRewards = new Deck[]{registeredDeck};
             rewards[3].isNoSell = true;
+
+        } else if (format == AdventureEventController.EventFormat.Sealed) {
+
+            rewards[3] = new AdventureEventReward();
+            rewards[3].minWins = 3;
+            rewards[3].maxWins = 3;
+            if (sealedPool != null) {
+                sealedPool.setName("Sealed Pool");
+                sealedPool.setComment("Prize for placing 1st overall in sealed event");
+                rewards[3].cardRewards = new Deck[]{sealedPool};
+            }
 
         }
 
@@ -744,6 +833,25 @@ public class AdventureEventData implements Serializable {
             }
             description += "Prizes\n3 round wins: 500 gold\n2 round wins: 200 gold\n1 round win: 100 gold\n";
             description += "Participating in this event will award a valueless copy of each card in your Jumpstart deck.";
+        } else if (format == AdventureEventController.EventFormat.Sealed) {
+            description = "Event Type: Sealed Deck\n";
+            description += "Block: " + getCardBlock() + "\n";
+            description += "Boosters: " + packConfiguration.length + " packs (" + String.join(", ", packConfiguration) + ")\n";
+            description += "Competition Style: " + participants.length + " players, matches played as best of " + eventRules.gamesPerMatch + ", " + (eventRules.getPairingDescription()) + "\n\n";
+
+            if (eventStatus == AdventureEventController.EventStatus.Available) {
+                description += String.format("Pay 1 Entry Fee\n- Gold %d[][+Gold][BLACK]\n- Mana Shards %d[][+Shards][BLACK]\n", Math.round(eventRules.goldToEnter * townPriceModifier), Math.round(eventRules.shardsToEnter * townPriceModifier));
+                if (eventRules.acceptsBronzeChallengeCoin) {
+                    description += "- Bronze Challenge Coin [][+BronzeChallengeCoin][BLACK]\n\n";
+                } else if (eventRules.acceptsSilverChallengeCoin) {
+                    description += "- Silver Challenge Coin [][+SilverChallengeCoin][BLACK]\n\n";
+                } else if (eventRules.acceptsChallengeCoin) {
+                    description += "- Gold Challenge Coin [][+ChallengeCoin][BLACK]\n\n";
+                } else {
+                    description += "\n";
+                }
+            }
+            description += String.format("Prizes\nChampion: Keep sealed pool + Challenge Coin + 2 Boosters\n2+ round wins: Challenge Coin + %s Booster, %s Booster\n1 round win: %s Booster, %s Booster\n0 round wins: %s Booster", rewardPacks[1].getComment(), rewardPacks[2].getComment(), rewardPacks[1].getComment(), rewardPacks[2].getComment(), rewardPacks[0].getComment());
         }
         return description;
     }
@@ -893,6 +1001,16 @@ public class AdventureEventData implements Serializable {
                     baseShardEntry = 5;
                     startingLife = 15;
                     allowsAddBasicLands = false;
+                    break;
+                case Sealed:
+                    // Same entry fee structure as Draft
+                    acceptsChallengeCoin = true;
+                    acceptsSilverChallengeCoin = false;
+                    acceptsBronzeChallengeCoin = false;
+                    baseGoldEntry = 3000;
+                    baseShardEntry = 50;
+                    startingLife = 20;
+                    allowsAddBasicLands = true;
                     break;
             }
             goldToEnter = baseGoldEntry;
