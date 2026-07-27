@@ -102131,7 +102131,7 @@
       "decks/standard/fallen_empires_svyelunite_floodwater_homarid.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 14,
     "life": 30,
     "colors": "UW",
     "questTags": [
@@ -102140,18 +102140,48 @@
       "Homarid",
       "Miniboss"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 75,
+        "addMaxCount": 75
+      },
+      {
+        "type": "shards",
+        "probability": 0.75,
+        "count": 2,
+        "addMaxCount": 3
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.5
+      }
+    ]
   },
   {
     "name": "FEM Homarid Deep Spawn",
-    "sprite": "sprites/enemy/fallen_empires/svyelunite/deep_spawn_placeholder.atlas",
+    "sprite": "sprites/enemy/fallen_empires/svyelunite/deep_spawn.atlas",
     "scale": 0.5,
     "deck": [
       "decks/standard/fallen_empires_svyelunite_homarid_deep_spawn.dck"
     ],
     "ai": "reckless",
     "boss": true,
-    "speed": 1,
+    "speed": 12,
     "life": 40,
     "gamesPerMatch": 3,
     "rewards": [
@@ -102160,6 +102190,33 @@
         "probability": 1,
         "count": 1,
         "cardName": "Deep Spawn|FEM"
+      },
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 150,
+        "addMaxCount": 150
+      },
+      {
+        "type": "shards",
+        "probability": 1,
+        "count": 5,
+        "addMaxCount": 5
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1
       }
     ],
     "colors": "U",
@@ -102169,7 +102226,9 @@
       "Homarid",
       "Boss"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "bossIntro": "The Deep Spawn rises from the flooded ruins, each movement shaking loose another piece of the ancient temple. \"The old stones remember the sea. Soon, so will your bones.\"",
+    "bossInsult": "\"Sink now, shore-walker. The tide keeps everything in the end.\""
   },
   {
     "name": "FEM Homarid Shaman",
@@ -102179,7 +102238,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_shaman.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102188,7 +102247,37 @@
       "Homarid",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Homarid Spawning Bed",
@@ -102198,7 +102287,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_spawning_bed.dck"
     ],
     "ai": "cautious",
-    "speed": 0.7,
+    "speed": 14,
     "life": 30,
     "colors": "U",
     "questTags": [
@@ -102207,7 +102296,37 @@
       "Homarid",
       "Miniboss"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 75,
+        "addMaxCount": 75
+      },
+      {
+        "type": "shards",
+        "probability": 0.75,
+        "count": 2,
+        "addMaxCount": 3
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.5
+      }
+    ]
   },
   {
     "name": "FEM Homarid Warrior A",
@@ -102217,7 +102336,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_warrior_a.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102226,7 +102345,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Green",
@@ -102236,7 +102377,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_green.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102245,7 +102386,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Purple",
@@ -102255,7 +102418,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_purple.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102264,7 +102427,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Red",
@@ -102274,7 +102459,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_red.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102283,7 +102468,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Yellow",
@@ -102293,7 +102500,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_yellow.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102302,7 +102509,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM River Merfolk",
@@ -102312,7 +102541,7 @@
       "decks/standard/fallen_empires_svyelunite_river_merfolk.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "UR",
     "questTags": [
@@ -102321,7 +102550,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Seasinger",
@@ -102332,7 +102591,7 @@
     ],
     "ai": "cautious",
     "boss": true,
-    "speed": 1,
+    "speed": 12,
     "life": 40,
     "gamesPerMatch": 3,
     "rewards": [
@@ -102341,6 +102600,33 @@
         "probability": 1,
         "count": 1,
         "cardName": "Seasinger|FEM"
+      },
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 150,
+        "addMaxCount": 150
+      },
+      {
+        "type": "shards",
+        "probability": 1,
+        "count": 5,
+        "addMaxCount": 5
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1
       }
     ],
     "colors": "UB",
@@ -102350,7 +102636,9 @@
       "Merfolk",
       "Boss"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "bossIntro": "The Seasinger lifts her conch scepter and the battlefield falls silent. \"You mistook mercy for weakness. Hear now the song that sent empires beneath the waves.\"",
+    "bossInsult": "\"Even your defiance has a melody. I will remember it when the tide erases your name.\""
   },
   {
     "name": "FEM Svyelunite Priest",
@@ -102360,7 +102648,7 @@
       "decks/standard/fallen_empires_svyelunite_svyelunite_priest.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102369,7 +102657,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Viscerid Drone",
@@ -102379,7 +102697,7 @@
       "decks/standard/fallen_empires_svyelunite_viscerid_drone.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "UB",
     "questTags": [
@@ -102388,7 +102706,37 @@
       "Homarid",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Knight",
@@ -102398,7 +102746,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_knight.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102407,7 +102755,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Mage C",
@@ -102417,7 +102795,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_mage.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102426,7 +102804,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Merchant",
@@ -102436,7 +102844,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_merchant.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102445,7 +102853,29 @@
       "Merfolk",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Soldier A",
@@ -102455,7 +102885,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_soldier.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102464,7 +102894,29 @@
       "Merfolk",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Vodalian War Machine",
@@ -102474,7 +102926,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_war_machine.dck"
     ],
     "ai": "reckless",
-    "speed": 0.8,
+    "speed": 14,
     "life": 30,
     "colors": "U",
     "questTags": [
@@ -102483,7 +102935,37 @@
       "Merfolk",
       "Miniboss"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 75,
+        "addMaxCount": 75
+      },
+      {
+        "type": "shards",
+        "probability": 0.75,
+        "count": 2,
+        "addMaxCount": 3
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.5
+      }
+    ]
   },
   {
     "name": "FEM Homarid Warrior B",
@@ -102493,7 +102975,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_warrior_b.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102502,7 +102984,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Warrior C",
@@ -102512,7 +103016,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_warrior_c.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102521,7 +103025,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Homarid Warrior 5ED",
@@ -102531,7 +103057,7 @@
       "decks/standard/fallen_empires_svyelunite_homarid_warrior_5ed.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102540,7 +103066,29 @@
       "Homarid",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Mage A",
@@ -102550,7 +103098,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_mage_a.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102559,7 +103107,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Mage B",
@@ -102569,7 +103147,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_mage_b.dck"
     ],
     "ai": "cautious",
-    "speed": 1,
+    "speed": 20,
     "life": 25,
     "colors": "U",
     "questTags": [
@@ -102578,7 +103156,37 @@
       "Merfolk",
       "Elite"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 40,
+        "addMaxCount": 40
+      },
+      {
+        "type": "shards",
+        "probability": 0.5,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Rare"
+        ],
+        "count": 1,
+        "probability": 0.25
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Soldier B",
@@ -102588,7 +103196,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_soldier_b.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102597,7 +103205,29 @@
       "Merfolk",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Soldier C",
@@ -102607,7 +103237,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_soldier_c.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102616,7 +103246,29 @@
       "Merfolk",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   },
   {
     "name": "FEM Vodalian Soldier D",
@@ -102626,7 +103278,7 @@
       "decks/standard/fallen_empires_svyelunite_vodalian_soldier_d.dck"
     ],
     "ai": "reckless",
-    "speed": 1,
+    "speed": 20,
     "life": 20,
     "colors": "U",
     "questTags": [
@@ -102635,6 +103287,28 @@
       "Merfolk",
       "Standard"
     ],
-    "spawnRate": 0
+    "spawnRate": 0,
+    "rewards": [
+      {
+        "type": "gold",
+        "probability": 1,
+        "count": 20,
+        "addMaxCount": 30
+      },
+      {
+        "type": "shards",
+        "probability": 0.35,
+        "count": 1,
+        "addMaxCount": 2
+      },
+      {
+        "type": "deckCard",
+        "rarity": [
+          "Common",
+          "Uncommon"
+        ],
+        "count": 1
+      }
+    ]
   }
 ]
