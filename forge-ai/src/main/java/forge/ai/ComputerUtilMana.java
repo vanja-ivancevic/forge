@@ -129,7 +129,9 @@ public class ComputerUtilMana {
         return score;
     }
 
-    private static void sortManaAbilities(final ListMultimap<ManaCostShard, SpellAbility> sourcesForShards, final ListMultimap<Integer, SpellAbility> manaAbilityMap, final SpellAbility sa) {
+    private static void sortManaAbilities(final ListMultimap<ManaCostShard, SpellAbility> sourcesForShards,
+            final ListMultimap<Integer, SpellAbility> manaAbilityMap, final ManaCostBeingPaid cost,
+            final SpellAbility sa, final Player ai) {
         final Map<Card, Integer> manaCardMap = Maps.newHashMap();
         final List<Card> orderedCards = Lists.newArrayList();
 
@@ -174,6 +176,17 @@ public class ComputerUtilMana {
         for (final ManaCostShard shard : sourcesForShards.keySet()) {
             final List<SpellAbility> abilities = sourcesForShards.get(shard);
             final List<SpellAbility> newAbilities = new ArrayList<>(abilities);
+            // Prefer a higher-output mode only when the other sources cannot cover this shard.
+            final Map<SpellAbility, Integer> abilityCapacity = new IdentityHashMap<>();
+            final Map<Card, Integer> sourceCapacity = new IdentityHashMap<>();
+            for (final SpellAbility ability : abilities) {
+                final int capacity = manaForShard(ability, ai, shard);
+                abilityCapacity.put(ability, capacity);
+                sourceCapacity.merge(ability.getHostCard(), capacity, Math::max);
+            }
+            final int totalCapacity = sourceCapacity.values().stream().mapToInt(Integer::intValue).sum();
+            final int manaNeeded = shard.isOr2Generic() || shard.isPhyrexian()
+                    ? 0 : cost.getUnpaidShards(shard);
 
             if (DEBUG_MANA_PAYMENT) {
                 System.out.println("Unsorted Abilities: " + newAbilities);
@@ -214,6 +227,13 @@ public class ComputerUtilMana {
                     return -1;
                 } else if (payWithAb2 && !payWithAb1) {
                     return 1;
+                }
+
+                final int otherCapacity = totalCapacity - sourceCapacity.getOrDefault(ability1.getHostCard(), 0);
+                final boolean ability1CanPay = otherCapacity + abilityCapacity.get(ability1) >= manaNeeded;
+                final boolean ability2CanPay = otherCapacity + abilityCapacity.get(ability2) >= manaNeeded;
+                if (ability1CanPay != ability2CanPay) {
+                    return ability1CanPay ? -1 : 1;
                 }
 
                 return ability1.compareTo(ability2);
@@ -859,11 +879,26 @@ public class ComputerUtilMana {
             }
         }
 
-        sortManaAbilities(sourcesForShards, manaAbilityMap, sa);
+        sortManaAbilities(sourcesForShards, manaAbilityMap, cost, sa, ai);
         if (DEBUG_MANA_PAYMENT) {
             System.out.println("DEBUG_MANA_PAYMENT: sourcesForShards = " + sourcesForShards);
         }
         return sourcesForShards;
+    }
+
+    private static int manaForShard(final SpellAbility ability, final Player ai, final ManaCostShard shard) {
+        if (ability.getManaPart().isComboMana()) {
+            return ability.amountOfManaGenerated(false);
+        }
+        int amount = 0;
+        for (final String mana : TextUtil.split(predictMana(ability, ai, shard), ' ')) {
+            if ("Any".equals(mana) || shard == ManaCostShard.GENERIC || shard == ManaCostShard.X
+                    || (shard == ManaCostShard.S && "S".equals(mana))
+                    || shard.canBePaidWithManaOfColor(MagicColor.fromName(mana))) {
+                amount++;
+            }
+        }
+        return amount;
     }
 
     private static void setComboManaChoice(final Player ai, final SpellAbility manaAb, final ManaCostBeingPaid cost) {
